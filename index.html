@@ -7,7 +7,7 @@
   <style>
     * {
       box-sizing: border-box;
-      font-family: 'Comic Sans MS', 'Poppins', cursive;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     }
 
     body {
@@ -128,10 +128,10 @@
 </head>
 <body>
   <div class="card" id="card">
-    <h1>Will you be my Valentine? ❤️</h1>
+    <h1>Will you be my Valentine? 💖</h1>
     <p>You make my days brighter and my heart happier 🥺✨</p>
     <div class="buttons">
-      <button class="yes" id="yesBtn" onclick="sayYes()">Yes ❤️</button>
+      <button class="yes" id="yesBtn" onclick="sayYes()">Yes 💘</button>
       <button class="no" id="noBtn" onclick="handleNo()">No 🙃</button>
     </div>
   </div>
@@ -177,9 +177,7 @@
       document.getElementById('card').classList.add('hidden');
       document.getElementById('yesCard').classList.remove('hidden');
       launchConfetti();
-      setTimeout(() => {
-        window.location.href = "https://www.instagram.com/_xoxo_043/";
-      }, 2000);
+      
     }
 
     function launchConfetti() {
